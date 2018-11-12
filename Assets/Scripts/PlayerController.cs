@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) {
 			
-		questmastertext.text = "";
 		questtext.text = SGM.GetQuestDescription (other.tag);
 		SGM.AdvancedFinishQuest (other.tag);
 		if (other.CompareTag ("KeyQuest")) {
